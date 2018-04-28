@@ -39,7 +39,7 @@ class ExpensesViewController: UIViewController {
             
             expensesTableView.reloadData()
         }catch{
-            print("Fetch could not be performed.")
+            print("Fetch")
         }
     }
     
