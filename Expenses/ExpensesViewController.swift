@@ -38,8 +38,9 @@ class ExpensesViewController: UIViewController {
             expenses = try managedContext.fetch(fetchRequest)
             
             expensesTableView.reloadData()
+            
         }catch{
-            print("Fetch")
+            print("Fetch could not be performed.")
         }
     }
     

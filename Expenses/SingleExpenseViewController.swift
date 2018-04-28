@@ -27,6 +27,11 @@ class SingleExpenseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        nameTextField.resignFirstResponder()
+        amountTextField.resignFirstResponder()
+    }
+    
     @IBAction func saveExpense(_ sender: Any) {
         let name = nameTextField.text
         let amountText = amountTextField.text ?? ""
